@@ -10,7 +10,7 @@ This project demonstrates:
 
 API Data Integration    
 Data Cleaning & Transformation
-DAX Calculations
+DAX Calculations 
 Time Intelligence Analysis 
 Interactive Dashboard Design
  
