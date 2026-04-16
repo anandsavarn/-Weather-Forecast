@@ -11,7 +11,7 @@ API Data Integration
 Data Cleaning & Transformation
 DAX Calculations 
 Time Intelligence Analysis 
-Interactive Dashboard Design
+Interactive Dashboard Design 
  
 🚀 Live Project Links
 
