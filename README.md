@@ -1,188 +1,246 @@
-# 🌦️Weather Forecast
-Real time Weather prediction dashboard.     
-Project Overview   
+<div align="center">
 
-Real Weather Analytics Dashboard is a data analytics project built using Microsoft Power BI that analyzes real-time and historical weather data fetched from an external API.   
-The dashboard transforms raw JSON weather data into meaningful insights using interactive visualizations, DAX measures, and KPI indicators. 
-     
-This project demonstrates:     
-    
-API Data Integration      
-Data Cleaning & Transformation  
-DAX Calculations 
-Time Intelligence Analysis   
-Interactive Dashboard Design 
- 
-🚀 Live Project Links
+<!-- HEADER BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=200&section=header&text=Weather%20Analytics%20Dashboard&fontSize=38&fontColor=4fc3f7&fontAlignY=38&desc=Real-Time%20Weather%20Intelligence%20%7C%20Power%20BI&descAlignY=58&descColor=90caf9&animation=fadeIn" width="100%"/>
 
-📂 Project Folder:
-https://drive.google.com/file/d/1loejnlgIycp4daC6-NcuSU83-aNSM2Sq/view?usp=drive_link
+<br/>
 
-💼 LinkedIn Post:
-https://www.linkedin.com/feed/update/urn:li:activity:7406832792334110720/
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![REST API](https://img.shields.io/badge/REST%20API-4fc3f7?style=for-the-badge&logo=postman&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![WeatherAPI](https://img.shields.io/badge/WeatherAPI.com-FF6B35?style=for-the-badge&logo=cloudflare&logoColor=white)
 
-🌐 Dataset Source:  
-WeatherAPI.com
+<br/>
 
-🛠️ Tools & Technologies Used
+> **Transforming raw weather API data into actionable intelligence using Power BI, DAX, and real-time API integration.**
 
-📊 Microsoft Power BI
+<br/>
 
-🌐 REST API Integration 
+[![View Project](https://img.shields.io/badge/📂%20View%20Project%20Files-Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1loejnlgIycp4daC6-NcuSU83-aNSM2Sq/view?usp=drive_link)
+[![LinkedIn Post](https://img.shields.io/badge/💼%20LinkedIn%20Post-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/feed/update/urn:li:activity:7406832792334110720/)
+[![Portfolio](https://img.shields.io/badge/🌐%20Portfolio-anandsavarn.vercel.app-00C896?style=for-the-badge)](https://anandsavarn.vercel.app)
 
-🧮 DAX (Data Analysis Expressions)
+</div>
 
-🔄 Power Query (Data Cleaning & Transformation)
+---
 
-📁 JSON to Tabular Conversion
+## 📸 Dashboard Preview
 
-📡 Data Source
+<div align="center">
+<img src="https://raw.githubusercontent.com/Anandsavran/Weather-Analytics-Dashboard/main/assets/dashboard-preview.png" alt="Weather Analytics Dashboard" width="95%" style="border-radius:10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);"/>
 
-Weather data is collected from:
+> *Real-time weather dashboard showing temperature trends, AQI, forecast, wind speed, and precipitation data for multiple cities.*
+</div>
 
-Website: WeatherAPI.com
+---
 
-Data Type: Real-time & Historical Weather Data
+## 🌟 Project Overview
 
-Format: JSON (Converted into structured table format)
+The **Real-Time Weather Analytics Dashboard** is a data analytics project built in **Microsoft Power BI** that connects live to the WeatherAPI.com REST API, fetches JSON weather data, transforms it using **Power Query**, and visualizes it through an interactive multi-panel dashboard.
 
-Parameters Included:
+This project goes beyond basic charts — it implements **DAX time intelligence**, **wind classification logic**, **AQI indicators**, and **conditional formatting** to provide a complete picture of atmospheric conditions across multiple Indian cities.
 
-Date & Time
+---
 
-Location
+## ✅ What This Project Demonstrates
 
-Temperature (°C)
+| Skill Area | Details |
+|---|---|
+| 🔌 **API Integration** | Live REST API connection via Power BI Web connector |
+| 🧹 **Data Cleaning** | JSON flattening, null handling, type conversion in Power Query |
+| 🧮 **DAX Calculations** | Time intelligence, KPIs, risk indicators, classification logic |
+| 📊 **Dashboard Design** | Multi-panel layout, conditional formatting, AQI gauge |
+| 📡 **Real-Time Data** | Dynamic refresh with live weather feed |
 
-Humidity (%)
+---
 
-Wind Speed (km/h)
+## 🛠️ Tech Stack
 
-Precipitation (mm)
+```
+📊 Microsoft Power BI     →  Dashboard & Visualization
+🌐 WeatherAPI.com REST    →  Real-time JSON Data Source
+🔄 Power Query (M)        →  ETL & Data Transformation
+🧮 DAX                    →  Measures, KPIs, Time Intelligence
+📁 JSON → Tabular         →  Schema flattening & normalization
+```
 
-Atmospheric Pressure (mb)
+---
 
-Weather Condition
+## 📡 Data Source
 
-🔄 Data Preprocessing Steps
+| Property | Detail |
+|---|---|
+| **Provider** | [WeatherAPI.com](https://www.weatherapi.com/) |
+| **Format** | JSON (REST API endpoint) |
+| **Type** | Real-time + Historical Weather Data |
+| **Cities Tracked** | Amritsar, Hyderabad, Jaipur (expandable) |
 
-Before analysis, the dataset was cleaned and transformed:
+**Parameters fetched:**
 
-Extracted data using API endpoint
+`Date/Time` • `Location` • `Temperature °C` • `Feels Like °C` • `Humidity %` • `Wind Speed km/h` • `Precipitation mm` • `Pressure mb` • `UV Index` • `Visibility` • `Weather Condition` • `AQI Components (CO, PM2.5, PM10, O3, NO2, SO2)`
 
-Converted JSON into structured tabular format
+---
 
-Removed duplicate records
+## 🔄 Data Pipeline
 
-Handled missing/null values
+```
+WeatherAPI.com (JSON)
+        │
+        ▼
+Power BI Web Connector
+        │
+        ▼
+Power Query (ETL)
+  ├── JSON → Tabular Expansion
+  ├── Duplicate Removal
+  ├── Null/Missing Value Handling
+  ├── Date-Time Format Standardization
+  ├── Unit Normalization (°C, km/h, mm)
+  └── Column Renaming & Type Assignment
+        │
+        ▼
+Data Model + DAX Measures
+        │
+        ▼
+Interactive Power BI Dashboard
+```
+
+---
+
+## 📊 Dashboard Modules
+
+### 🌡️ 1. Temperature Analysis
+- Average temperature measure with variance tracking
+- **Actual vs Feels Like** temperature comparison
+- Heat index / wind chill delta
+- 24-hour and 7-day trend line
+
+### ⏳ 2. Time Intelligence (DAX)
+- Previous Day Temperature comparison
+- Week-over-Week change calculation
+- Dynamic date slicer with rolling window
+
+### 🌬️ 3. Wind Speed Classification
+
+| Category | Speed Range |
+|---|---|
+| 🟢 Calm | 0–5 km/h |
+| 🔵 Breeze | 6–20 km/h |
+| 🟡 Moderate | 21–40 km/h |
+| 🟠 High Wind | 41–70 km/h |
+| 🔴 Extreme | > 70 km/h |
+
+### 🎨 4. Dynamic Conditional Formatting
+
+```
+Temperature > 30°C  →  🔴 Red   (Hot)
+Temperature 15–30°C →  🟡 Yellow (Mild)
+Temperature < 15°C  →  🔵 Blue  (Cold)
+```
+
+### 🌧️ 5. Rainfall Risk KPI
+- High Risk Alert triggered at `precipitation > 2.5mm`
+- Flood Risk Indicator with color-coded severity
 
-Converted date-time into proper format
+### 🫁 6. Air Quality Index (AQI) Panel
+Real-time pollutant tracking across 6 parameters:
 
-Standardized units (°C, km/h, mm)
+| Pollutant | Measured |
+|---|---|
+| CO | Carbon Monoxide |
+| PM10 | Coarse Particulate Matter |
+| O3 | Ozone |
+| PM2.5 | Fine Particulate Matter |
+| NO2 | Nitrogen Dioxide |
+| SO2 | Sulfur Dioxide |
 
-Renamed columns for readability
+---
 
-📊 Key Dashboard Features
-🌡️ 1. Temperature Analysis
+## 📌 Key Insights Discovered
 
-Average Temperature Measure
+> 💡 **Humidity & Precipitation Correlation** — Rainfall events observed predominantly when humidity exceeded **85%**
+>
+> 💡 **Feels Like Gap** — A consistent **2–4°C difference** between actual and perceived temperature under high humidity conditions
+>
+> 💡 **AQI Alert** — Dashboard flagged *"Unhealthy for Sensitive Groups"* status in Amritsar (AQI: 132.15), matching real-world winter fog patterns
+>
+> 💡 **Dynamic Refresh** — API-connected model enables up-to-date reporting without manual data entry
 
-Temperature Variance (Actual vs Feels Like)
+---
 
-Heat Index / Wind Chill Comparison
+## 🧠 Skills Demonstrated
 
-24-hour Trend Visualization
+```
+✔ REST API Integration in Power BI
+✔ JSON Data Extraction & Flattening
+✔ Power Query (M Language) Transformations
+✔ Advanced DAX — Measures, Calculated Columns, Variables
+✔ Time Intelligence Functions (DATEADD, PREVIOUSDAY, etc.)
+✔ KPI Cards & Conditional Formatting
+✔ AQI Gauge & Risk Indicator Design
+✔ Multi-city Comparative Dashboard
+✔ Analytical Thinking & Business Storytelling
+```
 
-⏳ 2. Time Intelligence
+---
 
-Previous Day Temperature
+## 🔮 Future Roadmap
 
-Week-over-Week Change
+- [ ] 🔵 Azure ML integration for temperature forecasting
+- [ ] 🌍 Multi-city comparative dashboard (pan-India)
+- [ ] 🔔 Automated alert system for extreme weather events
+- [ ] 📡 Real-time streaming dataset via Power BI Streaming API
+- [ ] 🗺️ Map visualization by geo-coordinates
+- [ ] 📱 Mobile-optimized Power BI report layout
 
-Dynamic Date Comparison using DAX
+---
 
-🌬️ 3. Wind Classification
+## 📁 Repository Structure
 
-Wind speed categorized into:
+```
+📦 Weather-Analytics-Dashboard
+ ┣ 📊 WeatherDashboard.pbix       ← Main Power BI file
+ ┣ 📄 README.md                   ← Project documentation
+ ┣ 📁 assets/
+ ┃  ┗ 🖼️ dashboard-preview.png   ← Dashboard screenshot
+ ┣ 📁 data-samples/
+ ┃  ┗ 📋 sample-weather.json      ← Sample API response
+ ┗ 📁 dax-measures/
+    ┗ 📝 measures.md              ← Key DAX formulas documented
+```
 
-Calm
+---
 
-Breeze
+## 📖 References
 
-Moderate
+- [WeatherAPI.com Documentation](https://www.weatherapi.com/docs/)
+- [Microsoft Power BI Official Docs](https://docs.microsoft.com/en-us/power-bi/)
+- [DAX Guide — SQLBI](https://dax.guide/)
+- [World Meteorological Organization Standards](https://www.wmo.int/)
 
-High Wind
+---
 
-Extreme
+<div align="center">
 
-🎨 4. Dynamic Conditional Formatting
+### 👨‍💻 Author
 
-Red → Hot (>30°C)
+**Anand Kumar**
+B.Tech – Computer Science Engineering (Data Science)
+Lovely Professional University, Punjab
 
-Yellow → Mild
+<br/>
 
-Blue → Cold
+[![Portfolio](https://img.shields.io/badge/🌐%20Portfolio-anandsavarn.vercel.app-00C896?style=for-the-badge)](https://anandsavarn.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Anandsavran-181717?style=for-the-badge&logo=github)](https://github.com/Anandsavran)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/feed/update/urn:li:activity:7406832792334110720/)
 
-🌧️ 5. Rainfall Risk KPI
+<br/>
 
-High Risk Alert if precipitation > 2.5mm
+---
 
-Flood Risk Indicator
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f3460,50:16213e,100:1a1a2e&height=100&section=footer" width="100%"/>
 
-📈 Business Objectives
-Objective 1: Temperature & Comfort Analysis
+*⭐ Star this repo if you found it helpful!*
 
-Compare actual temperature vs "Feels Like"
-
-Identify comfort variations
-
-Found 2–4°C difference in high humidity scenarios
-
-Objective 2: Precipitation & Humidity Trends
-
-Analyze correlation between humidity & rainfall
-
-Observed precipitation mostly when humidity > 85%
-
-📌 Key Insights
-
-Real-time API integration allows dynamic reporting
-
-Temperature fluctuations correlate with humidity & wind patterns
- 
-High humidity significantly impacts perceived temperature
-
-Precipitation probability increases after 85% humidity
-
-🧠 Skills Demonstrated
-
-✔ API Integration in Power BI
-✔ Data Cleaning & Transformation
-✔ Advanced DAX Calculations
-✔ Time Intelligence Functions
-✔ KPI & Risk Indicator Creation
-✔ Interactive Dashboard Design
-✔ Analytical Thinking
-
-🔮 Future Scope
-
-Integration with Azure ML for predictive modeling
-
-Multi-city comparative dashboard
-
-Automated alert system for extreme weather
-
-Real-time streaming dataset integration
-
-👨‍💻 Author
-
-Anand Kumar
-B.Tech – Computer Science Engineering
-Lovely Professional University
-
-📖 References
-
-WeatherAPI.com Documentation
-
-Microsoft Power BI Official Documentation
-World Meteorological Organization Standards
+</div>
