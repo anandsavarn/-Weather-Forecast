@@ -24,22 +24,11 @@
 </div>
 
 ---
-</div>
-
----
 
 ## 📸 Dashboard Preview
 
 <div align="center">
-<img src="assets/ev-dashboard-preview.png" alt="Electric Vehicle Population Dashboard - Excel" width="95%"/>
-
-> *Interactive Excel dashboard showing EV growth trends, geographic distribution, top manufacturers, BEV vs PHEV breakdown, and sales analysis — all built with Pivot Tables, Slicers, and Dynamic Charts.*
-</div>
-
-## 📸 Dashboard Preview
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/Anandsavran/Weather-Analytics-Dashboard/main/assets/dashboard-preview.png" alt="Weather Analytics Dashboard" width="95%" style="border-radius:10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);"/>
+<img src="https://raw.githubusercontent.com/Anandsavarn/Weather-Analytics-Dashboard/main/assets/dashboard-preview.png" alt="Weather Analytics Dashboard" width="95%" style="border-radius:10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);"/>
 
 > *Real-time weather dashboard showing temperature trends, AQI, forecast, wind speed, and precipitation data for multiple cities.*
 </div>
@@ -243,7 +232,7 @@ Lovely Professional University, Punjab
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/🌐%20Portfolio-anandsavarn.vercel.app-00C896?style=for-the-badge)](https://anandsavarn.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Anandsavran-181717?style=for-the-badge&logo=github)](https://github.com/Anandsavran)
+[![GitHub](https://img.shields.io/badge/GitHub-Anandsavarn-181717?style=for-the-badge&logo=github)](https://github.com/Anandsavarn)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/feed/update/urn:li:activity:7406832792334110720/)
 
 <br/>
