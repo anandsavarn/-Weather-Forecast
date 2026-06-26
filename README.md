@@ -6,7 +6,7 @@ Real Weather Analytics Dashboard is a data analytics project built using Microso
 The dashboard transforms raw JSON weather data into meaningful insights using interactive visualizations, DAX measures, and KPI indicators. 
      
 This project demonstrates:     
-   
+    
 API Data Integration      
 Data Cleaning & Transformation  
 DAX Calculations 
