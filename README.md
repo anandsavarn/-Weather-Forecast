@@ -65,7 +65,7 @@ This project goes beyond basic charts — it implements **DAX time intelligence*
 📁 JSON → Tabular         →  Schema flattening & normalization
 ```
 
----
+--- 
 
 ## 📡 Data Source
 
