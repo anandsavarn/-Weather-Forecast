@@ -28,9 +28,8 @@
 ## 📸 Dashboard Preview
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Anandsavarn/Weather-Analytics-Dashboard/main/assets/dashboard-preview.png" alt="Weather Analytics Dashboard" width="95%" style="border-radius:10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);"/>
-<img src="assets/dashboard-preview.png" alt="Electric Vehicle Population Dashboard - Excel" width="95%"/>
-> *Real-time weather dashboard showing temperature trends, AQI, forecast, wind speed, and precipitation data for multiple cities.*
+<img src="assets/dashboard-preview.png" alt="Weather Forecast Analytics Dashboard - Power BI" width="95%"/>
+> *Real-time weather forecast dashboard showing temperature trends, AQI, forecast, wind speed, and precipitation data for multiple cities.*
 </div>
 
 ---
