@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=200&section=header&text=Weather%20Analytics%20Dashboard&fontSize=38&fontColor=4fc3f7&fontAlignY=38&desc=Real-Time%20Weather%20Intelligence%20%7C%20Power%20BI&descAlignY=58&descColor=90caf9&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=200&section=header&text=Weather%20Forecast%20Dashboard&fontSize=38&fontColor=4fc3f7&fontAlignY=38&desc=Real-Time%20Weather%20Intelligence%20%7C%20Power%20BI&descAlignY=58&descColor=90caf9&animation=fadeIn" width="100%"/>
 
 <br/> 
  
