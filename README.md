@@ -3,7 +3,7 @@
 <!-- HEADER BANNER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=200&section=header&text=Weather%20Forecast%20Dashboard&fontSize=38&fontColor=4fc3f7&fontAlignY=38&desc=Real-Time%20Weather%20Intelligence%20%7C%20Power%20BI&descAlignY=58&descColor=90caf9&animation=fadeIn" width="100%"/>
 
-<br/> 
+<br/>     
  
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![REST API](https://img.shields.io/badge/REST%20API-4fc3f7?style=for-the-badge&logo=postman&logoColor=white)
